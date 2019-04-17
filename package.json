@@ -13,7 +13,7 @@
   "bugs": {
     "url": "https://github.com/jnmorse/freeCodeCamp-Survey-Form/issues"
   },
-  "homepage": "https://jnmorse.github.io/freeCodeCamp-Survey-Form",
+  "homepage": "https://jnmorse.github.io/freecodecamp-survey-form",
   "scripts": {
     "release": "standard-version --sign",
     "postrelease": "npm run publish",

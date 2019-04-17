@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>freeCodeCamp - Survey Form</title>
 </head>
 <body>
@@ -14,6 +14,83 @@
     <p>Survey Form</p>
   </header>
 
+  <p id="description">
+    Let us know how we can improve
+  </p>
+
+  <form id="survey-form" method="POST">
+    <p>
+      <label id="name-label">
+        * Name:
+        <input id="name" type="text" required placeholder="John">
+      </label>
+    </p>
+
+    <p>
+      <label id="email-label">
+        * Email:
+        <input type="email" name="email" id="email" required placeholder="someone@somewhere.com">
+      </label>
+    </p>
+
+    <p>
+      <label id="number-label">
+        Age:
+        <input type="number" name="age" id="number" min="10" max="120" placeholder="20">
+      </label>
+    </p>
+
+    <p>
+      <label id="dropdown-label">
+        what option best describes your current role: 
+        <select name="role" id="dropdown">
+          <option disabled value="">Select an Option</option>
+          <option value="student">Student</option>
+          <option value="ftj">Full-Time Job</option>
+          <option value="ftl">Full-Time Learner</option>
+          <option value="pns">Prefer Not to Say</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+    </p>
+
+    <fieldset>
+      <legend>How likely are you to suggest freeCodeCamp to a friend</legend>
+      <ul>
+        <li>
+          <label>
+            Not Likely:
+            <input type="radio" name="likely" id="not-likely" value="0">
+          </label>
+        </li>
+
+        <li>
+          <label>
+            Somewhat Likely:
+            <input type="radio" name="likely" id="somewhat-likely" value="1">
+          </label>
+        </li>
+
+        <li>
+          <label>
+            Most Likely:
+            <input type="radio" name="likely" id="somewhat-likely" value="2">
+          </label>
+        </li>
+
+        <li>
+          <label>
+            Definate Likely:
+            <input type="radio" name="likely" id="somewhat-likely" value="3">
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <p><button type="submit">Submit</button></p>
+  </form>
+
+  <script src="js/main.js"></script>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
