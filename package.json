@@ -1,0 +1,25 @@
+{
+  "name": "freecodecamp-survey-form",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jnmorse/freeCodeCamp-Survey-Form.git"
+  },
+  "author": "Joseph Morse <tamed.lionheart@gmail.com>",
+  "license": "MIT",
+  "description": "",
+  "bugs": {
+    "url": "https://github.com/jnmorse/freeCodeCamp-Survey-Form/issues"
+  },
+  "homepage": "https://jnmorse.github.io/freeCodeCamp-Survey-Form",
+  "scripts": {
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
