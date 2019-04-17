@@ -15,7 +15,7 @@
   },
   "homepage": "https://jnmorse.github.io/freeCodeCamp-Survey-Form",
   "scripts": {
-    "deploy": "gh-pages -d dist",
+    "publish": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
