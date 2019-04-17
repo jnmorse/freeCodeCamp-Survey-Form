@@ -15,7 +15,7 @@
   },
   "homepage": "https://jnmorse.github.io/freeCodeCamp-Survey-Form",
   "scripts": {
-    "release": "standard-version",
+    "release": "standard-version --sign",
     "postrelease": "npm run publish",
     "publish": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
