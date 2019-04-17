@@ -15,11 +15,15 @@
   },
   "homepage": "https://jnmorse.github.io/freeCodeCamp-Survey-Form",
   "scripts": {
+    "release": "standard-version",
+    "postrelease": "npm run publish",
     "publish": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "dependencies": {
-    "gh-pages": "^2.0.1"
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "standard-version": "^5.0.2"
   }
 }
