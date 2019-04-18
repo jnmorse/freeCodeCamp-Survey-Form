@@ -3,11 +3,32 @@
   --black: hsl(0, 0%, 5%);
 }
 
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 { line-height: 1.25em; }
+
+caption, figcaption, label, legend { line-height: 1.375em; }
+
+h1, legend, label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+p { line-height: 1.5em; }
+
+body, input {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 0.3em;
+}
+
 body {
   background-color: var(--white);
   color: var(--black);
   margin: 0;
   min-height: 100vh;
+  font-size: 16px;
 }
 
 header {
@@ -21,11 +42,69 @@ header {
 
 header h1, header p {
   margin: 0 10px;
-  line-height: 1.3em;
 }
 
 header p {
   font-weight: bold;
   font-style: italic;
   font-size: 1.7em;
+}
+
+main {
+  margin: 0 auto;
+  width: 50vw;
+}
+
+label {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-column-gap: 1.5em;
+}
+
+fieldset label {
+  display: block;
+}
+
+input {
+  line-height: 1.25em;
+  padding: 0.5em;
+  justify-self: left;
+}
+
+#number-label input, select {
+  justify-self: left;
+}
+
+form ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+form ul li {
+  margin: 0.25em 0;
+}
+
+@media only screen and (max-width: 650px) {
+  main {
+    width: 100%;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  input, select {
+    margin: 0 1.5em;
+    align-self: center;
+  }
+
+  label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
